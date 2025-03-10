@@ -1,0 +1,423 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+  font-family: "Quicksand", sans-serif;
+}
+/* Hader - links */
+.header{
+  padding: 20px 37px;
+  background: #110545;
+  border-radius: 15px 0 0 15px;
+}
+.indice{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.indice img{
+  height: 50px;
+}
+.indice ul{
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.indice a{
+  color: #888;
+  font-weight: 600;
+  transition:  0.6s ease-in; 
+}
+.indice a:hover{
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+/* Páginas de ritmos, index*/
+.main{
+  display: flex;
+  padding: 30px 20px;
+  justify-content: space-between;
+  align-items: center; 
+}
+.carrossel-texto, .rit_texto {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #d674be7e;
+  border-radius: 10px;
+  margin: 50px ;
+  max-width: 500px;
+}
+.text-pass, .car_text, .car_texts {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.apresentacao, .apresentacao2, .apresentacao3{
+  min-width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  height: 250px;
+  border-right: 1px solid #ddd;
+}
+
+.apresentacao h1, .apresentacao2 h1, .apresentacao3 h1{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.apresentacao p, .apresentacao2 p, .apresentacao3 p{
+  position: relative;
+  top: 15px;
+  left: 49px;
+  width: 400px;
+  text-align: justify;
+  font-size: 18.2px;
+}
+
+.carrossel-botoes {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.botao-carrossel {
+  background-color: rgba(0, 0, 0, 0.034);
+  color: rgb(2, 0, 0);
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  margin: 15px;
+}
+.botao-carrossel:hover {
+  background-color: rgba(0, 0, 0, 0.247);
+}
+
+.img,.ritmo{
+  position: relative;
+  right: 110px;
+}
+.img img{
+  height: 400px;
+}
+
+.img2{
+  position: relative;
+  right: 250px;
+}
+.img2 img{
+  height: 400px;
+}
+
+/* rodapé - footer */
+
+.rodape{
+  position: relative;
+  height: 80px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to left, #110545,#8368fc ,#c4ceeca6);
+  padding: 15px 40px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.socials {
+  display: flex;
+  gap: 20px;
+  font-size: 26px;
+  transition: .5s ease-out;
+}
+.socials i{
+  color: #ddd;
+}
+.socials a i:hover{
+  transform: scale(1.35);
+  color: #1b1a55;
+}
+.rodape p{
+  position: relative;
+  display: flex;
+  color: #333333bd;
+  font-size: 20px;
+  font-weight: 600;
+  width: 300px;
+  text-align: center;
+}
+.contact{
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 16px;
+  border: 0;
+  color: white;
+  background-color: #110545;
+  width: 200px;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px;
+  transition: .5s ease-in-out;
+}
+/* link do agendamento */
+.reserv{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  font-size: 25px;
+  transition: .5s ease-out;
+}
+.reserv a i:hover{
+  transform: scale(1.35);
+  color: #079c0f;
+}
+
+.footer-link{
+  text-decoration: none;
+  color: #ddd;
+}
+
+.contact:hover{
+  background-color:#414df5;
+  transform: scale(1.05);
+}
+
+/* pagina de horários */
+
+.aulas{
+  justify-content: center;
+  display: flex;
+  margin: 25px 20px ;
+  color: #333;
+  font-size: 30px;
+  align-items: center;
+}
+table{
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background: white;
+  box-shadow:  0 0 10px rgb(0, 0, 0, 0.1);
+}
+th{
+  background-color: #333;
+  color: white;
+}
+th, td{
+  padding: 15px;
+  border: 1px  solid #ddd;
+  text-align: center;
+}
+
+.hyp-hop{
+  background-color: #ffcc80;
+  color: #1b5e20;
+  font-weight: bold;
+}
+.ballet{
+  background-color:   #81c784;
+  color: #1b5e20;
+  font-weight: bold;
+}
+.jazz{
+  background-color: #64b5f6;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+.contemporaneo{
+  background-color: #e57573;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+.d_salao{
+  background-color: #f455fa;
+  color: #1b5e20;
+  font-weight: bold;
+}
+.zumba{
+  background-color: #dff852;
+  color: #1b5e20;
+  font-weight: bold;
+}
+
+/* pagina de dicas */
+
+.carrossel-dicas {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #d674be7e;
+  border-radius: 10px;
+  right: 150px;
+  margin: 10px auto;
+  max-width: 500px;
+}
+.dicas-pass, .dicas-text, .dicas-text2{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.dicas, .dicas2, .dicas3{
+  min-width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  height: 250px;
+  border-right: 1px solid #ddd;
+}
+
+.dicas h1, .dicas2 h1, .dicas3 h1{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.dicas p, .dicas2 p, .dicas3 p{
+  position: relative;
+  top: 24px;
+  left: 49px;
+  width: 400px;
+  text-align: justify;
+  font-size: 19px;
+}
+
+/* Carrosel de imagens */
+.carrossel, .carrossel2, .carrossel3{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px auto;
+  max-width: 500px;
+}
+.carrossel-i, .carrossel-i2, .carrossel-i3{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.imagem, .imagem2, .imagem3{
+  min-width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  height: 300px;
+  border-right: 1px solid #ddd;
+}
+
+.imagem img, .imagem2 img, .imagem3 img{
+  width: 100%;
+}
+
+/* formulario - fale conosco */
+
+.section_form{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+form{
+  width: 400px;
+  padding: 30px;
+  border: 2px solid #110545;
+  border-radius: 14px;
+}
+form p{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  font-weight: 500;
+  width: 100%;
+  font-size: 20px;
+  color: #110545;
+}
+.form{
+  width: 100%;
+  margin: 15px 0;
+  color: #110545;
+}
+.form label{
+  font-weight: 600;
+  padding: 4px;
+  padding-left: 10px;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+}
+textarea{
+  padding: 2px;
+  height: 80px;
+  resize: none;
+  width: 100%;
+  padding-left: 10px;;
+  line-height: 30px;
+  border-radius: 16px;
+  border: 1px solid #110545;
+  outline: none;
+}
+
+input[type=text], input[type=email], select{
+  width: 100%;
+  padding-left: 10px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 16px;
+  border: 1px solid #110545;
+  outline: none;
+}
+
+input[type=submit]{
+  display: flex;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: #110545;
+  color: #fff;
+  height: 30px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 15px;
+  margin: 0 auto;
+  text-align: center;
+  transition:  0.5s ease;;
+}
+
+input[type=submit]:hover{
+  background-color: #0b530b;
+  transform: scale(1.05);
+}
+
+/* Mensagem após envio do formulário */
+#sucesso_mensagem{
+  display: none;
+  color: #2de226;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 900;
+  border: 2px solid #2de226;
+  border-radius: 15px;
+  max-width: 400px;
+}
+#erro_mensagem{
+  display: none;
+  color: #e22626;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 900;
+  border: 2px solid #e22626;
+  border-radius: 15px;
+  max-width: 400px;
+}

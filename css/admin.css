@@ -1,0 +1,27 @@
+#h1{
+    padding: 22px;
+    justify-content: center;
+    display: flex;
+    margin: 25px 20px ;
+    color: #333;
+    font-size: 30px;
+    align-items: center;
+}
+#table{
+    width: 80%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: rgba(73, 83, 219, 0.301);
+    box-shadow:  0 0 10px rgba(65, 250, 250, 0.226); 
+}
+
+#table th{
+    background-color: #10498b;
+    color: white;
+}
+
+th, td{
+    padding: 15px;
+    border: 1px  solid #ddd;
+    text-align: center;
+}
